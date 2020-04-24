@@ -7,7 +7,12 @@ module.exports = {
   devServer: {
     port: 6003
   },
-
+  // build: {
+  //   index: path.resolve(__dirname, '../dist/index.html'),
+  //   assetsRoot: path.resolve(__dirname, '../dist'),
+  //   assetsSubDirectory: 'static',
+  //   assetsPublicPath: './'
+  // },
   chainWebpack: config => {
     config.entry.app = ['babel-polyfill', resolve('src/main.js')]
     config.resolve.alias
